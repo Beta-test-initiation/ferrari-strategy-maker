@@ -1,0 +1,48 @@
+
+---
+
+## 📄 `.gitignore` (top-level)
+
+Here’s a clean and useful `.gitignore` for your Python project with notebooks, models, and frontend:
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.env
+.env
+.venv/
+cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Mac
+.DS_Store
+
+# Data
+data/raw/*
+data/processed/*
+
+# Allow versioning of processed schemas or samples
+!data/processed/.gitkeep
+
+# Models
+ml/models/*.pkl
+ml/models/*.joblib
+
+# Node/React frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.env
+
+frontend
+
+# VSCode
+.vscode/
+
+# OS junk
+Thumbs.db
