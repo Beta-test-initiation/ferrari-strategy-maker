@@ -9,7 +9,7 @@ FILE_PATH = "data/processed/tire_stints_2025.csv"
 df = pd.read_csv(FILE_PATH)
 
 # Ferrari driver abbreviations
-ferrari_drivers = ['LEC', 'SAI']
+ferrari_drivers = ['LEC', 'HAM']
 
 # Filter data for Ferrari only
 ferrari_stints = df[df['Driver'].isin(ferrari_drivers)].copy()
